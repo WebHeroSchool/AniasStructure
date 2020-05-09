@@ -1,204 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>
+  <head>
+  <meta charset="utf-8">
+  <link href="https://fonts.google.com/specimen/Over+the+Rainbow?selection.family=Noto+Sans+TC:wght@300|Raleway:ital,wght@1,500" rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Dekko?selection.family=Dekko|Noto+Sans+TC:wght@300|Raleway:ital,wght@1,500|Titillium+Web" rel="stylesheet">
+  <title>
   Weather handbook
-</title>
- <link rel="stylesheet" type="text/css" href="weather_handbook.css">
-</head>
-<body>
-<header>
-  <h4>
-  Predicting the wind
-  <div class="block3">
-  8
-  </div>
-  </h4>
-</header>
-<section>
-<!--<article>-->
-  <p>
-    This is now the gradient wind and is the wind found above the boundary layer at around 600 metres (a height unaffected by the surface).
-  </p>
-  <p>
-    We now have to modify this forecast to allow for the effects of surface friction. This will vary depending on the stability of the atmosphere; here a judgment will need to be made on the air mass where youhave taken the measurement as well as on the surface concerned.
-  </p>
-  <p>
-    The table below shows the multiplier to be used to convert the gradient wind speed to the surface wind speed, and the amount by which the direction of the surface wind should be shifted.
-  </p>
-<!--</article>
-<article>-->
-<table>
-<caption>
-  <h2>
-  Table for estimating surface wind from the gradient wind
-  </h2>
-</caption>
- <tr>
-   <th rowspan=2>
-     Conditions
-   </th>
-   <th colspan=2>
-     Over sea
-   </th>
-   <th colspan=2>
-     Over land
-   </th>
-</tr>
-   <th>
-     Speed multiplier
-   </th>
-   <th>
-     Degrees Backed
-   </th>
-   <th>
-     Speed multiplier
-   </th>
-   <th>
-     Degrees Backed
-   </th>
-  <tr>
-    <td>
-      Cold clear night
-    </td>
-    <td></td>
-    <td></td>
-    <td>
-      0.25
-    </td>
-    <td>
-      40
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Stable
-    </td>
-    <td>
-      0.75
-    </td>
-    <td>
-      20
-    </td>
-    <td>
-      0.33
-    </td>
-    <td>
-      35
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Unstable
-    </td>
-    <td>
-      0.90
-    </td>
-    <td>
-      10
-    </td>
-    <td>
-      0.60
-    </td>
-    <td>
-      20
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Average
-    </td>
-    <td>
-      0.80
-    </td>
-    <td>
-      15
-    </td>
-    <td>
-      0.50
-    </td>
-    <td>
-      30
-    </td>
-  </tr>
-  <tr>
-    <td colspan=5 >
-      <cite>
-      Stable means the warm sector of a depression or a high pressure area.
-      </cite>
-    </td>
-  </tr>
-  <tr>
-    <td colspan=5>
-      <cite>
-      Unstable means the warm sector of a depression.
-      </cite>
-    </td>
-  </tr>
-</table>
-<p>
-  We now have an expected surface wind, in knots, for the marked on the weather map.
-</p>
-<p>
-We have almost finished but not quite. On an average day, we can expect qusts og up to 1/3 as high again as the given wind speed. These can be stronger in unstable conditions around beeg showers and squalls, and less with stable conditions.
-</p>
-
-<p>
-  <img src="map.jpg" class="rightimg" alt="Forecast chart for 120 hours ahead"> It is unlikely that our position is exactly in between isobars, and even if it is, the systems will move. We must look at the expected winds around, how the gradient changes, and whether we will find stronger or lighter winds as we proceed.
-</p>
-<aside>
- <div class="block1">
-   <h3>
-     Measuring the wind speed from the weather map
-   </h3>
-   <ol type="1">
-   <li>
-     Using dividers measure the distance between isobars.
-   </li>
-   <li>
-     Transfer to the geostrophic wind scale.  
-   </li>
-   <li>
-     Make sure you are using the correct latitude.
-   </li>
-   <li>
-     Were the isobars straight and parallel where measured?
-   </li>
-   <li>
-     If not, adjust for curvature (- for lows, + for highs).
-   </li>
-   <li>
-     We now have gradient wind.
-   </li>
-   <li>
-     Adjust for surface friction.
-   </li>
-   <li>
-     Make allowances for gusts.
-   </li>
-   </ol>
- </div>
-</aside>
-<!--</article>-->
-</section>
-<section>
-  <h1>
-    Verifying the forecast
-  </h1>
-  <p>
-    Weather maps cover a large area and it is a good idea to verify the analysis a best as you can/ On board, this is by checking the barometer, making sure it is accurately adjusted, and by nothing the wind direction and strength. Our own observations of cloud structures will indicate where within a system we might be, and the likely air mass.
-  </p>
-  <p>
-    If internet access is available, you will be able to find barometer readings and weather reports from some coastal stations and airports, buoy reports, and satellite images (Chapter 14 looks at this in more detail).
-  </p>
-</section>
-<footer>
-<div class="block2">
-  47
-</div>
-</footer>
+  </title>
+  <link rel="stylesheet" type="text/css" href="./weather_handbook.css">
+  </head>
+  <body class="body" lang="en">
+    <header class="header">
+      <h2 class="header__subtitle">
+      Predicting the wind
+      <span class="header__chapternumber">
+      8
+      </span>
+      </h2>
+    </header>
+      <section class="section">
+        <p class="section__text">
+        This is now the gradient wind and is the wind found above the boundary layer at around 600 metres (a height unaffected by the surface).
+        </p>
+        <p class="section__text">
+        We now have to modify this forecast to allow for the effects of surface friction. This will vary depending on the stability of the atmosphere; here a judgment will need to be made on the air mass where youhave taken the measurement as well as on the surface concerned.
+        </p>
+        <p class="section__text">
+        The table below shows the multiplier to be used to convert the gradient wind speed to the surface wind speed, and the amount by which the direction of the surface wind should be shifted.
+        </p>
+        <p class="section__text">
+        We now have an expected surface wind, in knots, for the marked on the weather map.
+        </p>
+        <p class="section__text">
+        We have almost finished but not quite. On an average day, we can expect qusts og up to 1/3 as high again as the given wind speed. These can be stronger in unstable conditions around beeg showers and squalls, and less with stable conditions.
+        </p>
+      </section>
+      <section class="section">
+        <aside class="aside" title="Practice">
+          <h3 class="aside__subsubtitle">
+          Measuring the wind speed from the weather map
+          </h3>
+          <ol class="aside__list" type="1">
+            <li>
+            Using dividers measure the distance between isobars.
+            </li>
+            <li>
+            Transfer to the geostrophic wind scale.  
+            </li>
+            <li>
+            Make sure you are using the correct latitude.
+            </li>
+            <li>
+            Were the isobars straight and parallel where measured?
+            </li>
+            <li>
+            If not, adjust for curvature (- for lows, + for highs).
+            </li>
+            <li>
+            We now have gradient wind.
+            </li>
+            <li>
+            Adjust for surface friction.
+            </li>
+            <li>
+            Make allowances for gusts.
+            </li>
+          </ol>
+        </aside>
+      <h1 class="section__title">
+      Verifying the forecast
+      </h1>
+      <p class="section__text">
+      Weather maps cover a large area and it is a good idea to verify the analysis a best as you can/ On board, this is by checking the barometer, making sure it is accurately adjusted, and by nothing the wind direction and strength. Our own observations of cloud structures will indicate where within a system we might be, and the likely air mass.
+      </p>
+      <p class="section__text">
+      If internet access is available, you will be able to find barometer readings and weather reports from some coastal stations and airports, buoy reports, and satellite images (Chapter 14 looks at this in more detail).
+      </p>
+    </section>
+  <footer class="footer" >
+    <span class="footer__pagenumber">
+    47
+    </span>
+    <address class="footer__address" >
+      <p class="footer__text" align="center">
+      Written by Chris Tibbs
+      </p>
+    </address>
+  </footer>
 </body>
 </html>
-
-

@@ -1,93 +1,82 @@
-body {
+.body {
   width: 500px;
   margin: 10px 40px 10px 80px;
+  font-family: 'Over the Rainbow';
 }
-p {
-  text-align: left;
-  line-height: 1.5;
+.header {
+  
 }
-table {
-  color: black;
-  border-spacing: 1px;
-  table-layout: fixed;
-  padding: 1px 2px;
-  font-size: 8.4pt;
-}
-td, th {
-    background: #B693C8;
-    padding: 1px 6px;
-   }
-h1 {
-  font-size: 13pt;
-  text-align: left;
-  color: #511D6B;
-  margin-bottom: -5px;
-  margin-top: 0;
-  font-weight: 800;
-}
-h2 {
-  font-size: 10pt;
-  text-align: left;
-  color: #511D6B;
-  margin-top: 0;
-  font-weight: 600;
-  }
-h3 {
-  font-size: 13pt;
-  text-align: center;
-  color: white;
-  background: #511D6B;
-  padding: 4px;
-  font-weight: bold;
-  margin-bottom: -5px;
-  margin-top: 0;
-}
-h4 {
-  font: 13pt Gill Sans, sans-serif;
+.header__subtitle {
+  font-family: 'Dekko';
   text-align: right;
   color: #511D6B;
   margin-bottom: -5px;
   margin-top: 0;
   font-weight: 800;
 }
-section {
-  font: 9pt Gill Sans, sans-serif;
-}
-cite {
-  font: 7pt normal;
-}
-img.rightimg {
-float: right;
-margin: -7px 0 5px 20px;
-height: 45%;
-width: 45%;
-}
-.block1 { 
-    background: #A4BE7C;
-    width: 50%;
-    padding: 5px;
-    border: 1px solid #000;
-    float: left;
-    margin: 0 10px 10px -50px;
-    line-height: 1.5;
- }
- .block2 {
-    background: #6D3C7D;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    font-size: 12pt;
-    text-align: center;
-    margin: -15px 5px 5px 5px;
-    line-height: 30px;
-    color: white;
-    float: right;
-}
-.block3 {
+.header__chapternumber {
   float: right;
   padding: 0 4px;
   font-size: 20pt;
   font-style: italic;
   font-weight: bold;
   color: #B693C8;
+}
+.section {
+  
+}
+.section__text {
+  text-align: left;
+  line-height: 1.5;
+}
+.section__title {
+  font-size: 13pt;
+  text-align: left;
+  color: #511D6B;
+  margin-bottom: -5px;
+  margin-top: 0;
+  font-weight: 800;
+}
+.aside {
+    background: #A4BE7C;
+    width: 50%;
+    padding: 3px;
+    border: 1px solid #000;
+    float: left;
+    margin: 0 10px 10px -50px;
+    line-height: 1.5;
+ }
+.aside__subsubtitle {
+  font-size: 12pt;
+  text-align: center;
+  color: white;
+  background: #511D6B;
+  padding: 3px;
+  font-weight: bold;
+  margin-bottom: -5px;
+  margin-top: 0;
+}
+.aside__list {
+  
+}
+.footer {
+
+}
+.footer__pagenumber {
+    background: #6D3C7D;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'Dekko';
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    float: right;
+    margin: 0 5px 5px 5px;
+}
+.footer__address {
+  
+}
+.footer__text {
+  
 }
